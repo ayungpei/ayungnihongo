@@ -1,0 +1,15 @@
+.footer-sns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0px;
+  position: sticky;
+  bottom: 0px;
+  background-color: #e8ae62;
+  color: #fff;
+}
+.footer-sns a {
+  text-decoration: none;
+  margin: 0px 5px;
+}

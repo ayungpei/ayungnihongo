@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "cwTeXYen", sans-serif;
+}
+body,
+html {
+  width: auto;
+  margin: 0;
+  position: relative;
+  background-color: #b2deeb;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .ayungnihongo {
+  padding: 0;
+  margin: 10px 0px;
+  letter-spacing: 15px;
+
+  text-align: center;
+  font-size: 2.5rem;
+  color: #73464f;
+}
+.header-container {
+  background-color: #eafbff;
+  background-image: url(官網頁面.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 45%;
+  background-position-x: auto;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 850px) {
+  .header-container {
+    background-color: #eafbff;
+    background-image: url(官網頁面.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 45%;
+    background-position-x: auto;
+    height: 30vh;
+    width: 100%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 520px) {
+  .header-container {
+    background-color: #eafbff;
+    background-image: url(官網頁面.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 45%;
+    background-position-x: auto;
+    height: 20vh;
+    width: 100%;
+    position: relative;
+  }
+}
+nav {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: width 0.6s linear;
+}
+
+nav.active {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 20px;
+  transition: width 0.6s linear;
+}
+
+nav.active ul {
+  width: 100%;
+}
+nav ul li {
+  transform: rotateY("0deg");
+  opacity: 0;
+  transition: trasform 0.6s linear, opacity 0.6s linear;
+  transition: border 0.5s;
+}
+nav ul li:hover {
+  border-bottom: 3px #73464f solid;
+  padding-bottom: 30px;
+}
+
+nav.active ul li {
+  opacity: 1;
+  transform: rotateY("360deg");
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 420px) {
+  nav.active ul li {
+    opacity: 1;
+    transform: rotateY("360deg");
+    font-size: 0.9rem;
+  }
+  nav ul li:hover {
+    border-bottom: 3px #73464f solid;
+    padding-bottom: 10px;
+  }
+  nav ul a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0px;
+  }
+}
+nav ul a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.icon {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+}
+.icon:focus {
+  outline: 0;
+}
+.icon .line {
+  background-color: #5290f9;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  transition: transform 0.6s linear;
+}
+.icon .line2 {
+  top: auto;
+  bottom: 10px;
+}
+nav.active .icon .line1 {
+  transform: rotate(-765deg) translateY(5.5px);
+}
+nav.active .icon .line2 {
+  transform: rotate(765deg) translateY(-5.5px);
+}
+.logo-container {
+  position: absolute;
+  left: 5vh;
+  top: 55vh;
+  transform: translateY(-50%);
+}
+.logo-container .img-logo {
+  background-color: #fff;
+  width: 150px;
+  border-radius: 100%;
+}
+@media screen and (max-width: 825px) {
+  nav.active {
+    width: 100%;
+  }
+  .logo-container {
+    position: absolute;
+    left: 3vh;
+    top: 12vh;
+    transform: translateY(-50%);
+  }
+  .logo-container .img-logo {
+    background-color: #fff;
+    width: 100px;
+    border-radius: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  nav.active {
+    width: 100%;
+  }
+  .logo-container {
+    position: absolute;
+    left: 3vh;
+    top: 20vh;
+    transform: translateY(-50%);
+  }
+  .logo-container .img-logo {
+    background-color: #fff;
+    width: 100px;
+    border-radius: 100%;
+  }
+}

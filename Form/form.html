@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <a href="../index.html"
+          ><img
+            src="阿勇日文LOGO(確定版).png"
+            alt=""
+            class="img-logo"
+            id="logo"
+        /></a>
+      </div>
+      <h2>阿勇日文表單</h2>
+      <!--Form-->
+      <form action="" id="form">
+        <!--Full Name-->
+        <div class="form-group">
+          <label for="name">名子</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="例：蔡阿勇"
+            required
+            minlength="2"
+            maxlength="20"
+          />
+          <!--minlength 最少字數-->
+        </div>
+        <!--Phone Number-->
+        <div class="form-group">
+          <label for="Phone">聯絡電話</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="0911-111-111"
+            required
+            pattern="09\d{2}\-?\d{3}\-?\d{3}"
+          />
+        </div>
+        <!--Email Address-->
+        <div class="form-group">
+          <label for="email">信箱</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="email@gmail.com"
+            required
+            pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b"
+          />
+        </div>
+        <!--Wedsite URL-->
+        <div class="form-group">
+          <label for="line">Line ID</label>
+          <input type="text" id="line" placeholder="" />
+        </div>
+        <div class="form-group">
+          <label for="lesson">詢問課程名稱為:</label>
+          <select name="lesson" id="" class="lesson-option">
+            <option value="日文基礎班">日文基礎班</option>
+            <option value="穩扎穩打班">穩扎穩打班</option>
+            <option value="日文家教班">日文家教班</option>
+          </select>
+        </div>
+
+        <!--Password-->
+        <!-- <div class="form-group">
+          <label for="password1">密碼</label>
+          <input
+            type="password"
+            id="password1"
+            placeholder="請輸入至少8位數，並至少一位大小寫區隔及數字"
+            required
+            pattern="[a-zA-Z0-9]{8,}"
+          />
+        </div> -->
+        <!--Confirm Password-->
+        <!-- <div class="form-group">
+          <label for="password2">密碼確認</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="請確認密碼是否相同"
+            required
+            pattern="[a-zA-Z0-9]{8,}"
+          />
+        </div> -->
+        <!--Submit Form 設定type屬性-->
+        <button type="submit">送出</button>
+      </form>
+      <!--Error / Success Message-->
+      <div class="message-container">
+        <h3 id="message">感謝您花時間輸入表單</h3>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

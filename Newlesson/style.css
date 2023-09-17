@@ -1,0 +1,124 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logo-container .img-logo {
+  background-color: #fff;
+  width: 150px;
+  border-radius: 100%;
+}
+
+.main-info {
+  padding: 0px 10px;
+}
+.lesson {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+@media screen and (max-width: 950px) {
+  .lesson {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
+.item {
+  display: flex;
+  margin: 0px 10px;
+  width: 370px;
+}
+.item .pic {
+  width: 50%;
+}
+.item .pic img {
+  width: 100%;
+  border-radius: 5px;
+}
+.item .txt {
+  padding-left: 30px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.item .txt h2 {
+  color: #73464f;
+  padding-bottom: 10px;
+}
+.lesson-btn {
+  align-self: flex-end;
+  padding: 5px;
+  border-radius: 50px;
+  border: solid 2px black;
+  width: 80px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.lesson-btn:hover {
+  color: #fff;
+  background-color: #e8ae62;
+  width: 100px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .lesson {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+  }
+  .lesson .item .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    margin: 0px 10px;
+  }
+  .item .pic img {
+    width: 100px;
+    padding: 5px 0px;
+  }
+
+  .lesson-btn {
+    align-self: flex-end;
+    padding: 5px 0px;
+    margin: 5px 0px;
+    border-radius: 50px;
+    border: solid 2px black;
+    width: 80%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  .lesson-btn:hover {
+    color: #fff;
+    background-color: #e8ae62;
+    width: 100%;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
